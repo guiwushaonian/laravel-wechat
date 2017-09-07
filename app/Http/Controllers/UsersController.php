@@ -28,4 +28,14 @@ class UsersController extends Controller
 
         return $user;
     }
+
+    //修改用户的备注信息
+    public function remark()
+    {
+        $res = $this->userApi->remark('oEs1mwQc_GAW9CAU1TCP2Icm5Ykw','小小高');
+        if($res) {
+            return '修改用户备注信息成功';
+        }
+        return '修改用户备注信息失败';
+    }
 }
