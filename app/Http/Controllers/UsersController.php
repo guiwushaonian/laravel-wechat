@@ -20,4 +20,12 @@ class UsersController extends Controller
         $users = $this->userApi->lists();
         return $users;
     }
+
+    //获取个人信息
+    public function user($openId)
+    {
+        $user = $this->userApi->get($openId);
+
+        return $user;
+    }
 }
