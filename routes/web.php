@@ -22,6 +22,8 @@ Route::group(['middleware'=>['web']],function() {
 
     Route::get('/send_all','MessagesController@sendAll');
     Route::get('/send_two','MessagesController@sendTwo');
+
+    Route::get('/notice','NoticesController@notice');
 });
 
 Route::any('/wechat', 'WechatController@serve');
