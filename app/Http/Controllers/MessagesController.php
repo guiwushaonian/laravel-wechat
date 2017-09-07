@@ -25,7 +25,7 @@ class MessagesController extends Controller
     //给指定用户发送消息
     public function sendTwo()
     {
-        $this->broadcast->send('content','你好啊',[
+        $this->broadcast->send('text','你好啊',[
             'oEs1mwQc_GAW9CAU1TCP2Icm5Ykw',
             'oEs1mwRdYgkNQf1AGmw7JuNYuDXI'
         ]);
