@@ -20,6 +20,8 @@ Route::group(['middleware'=>['web']],function() {
     Route::get('/user/{openId}','UsersController@user');
     Route::get('/remark','UsersController@remark');
 
+    Route::get('/send_all','MessagesController@sendAll');
+    Route::get('/send_two','MessagesController@sendTwo');
 });
 
 Route::any('/wechat', 'WechatController@serve');
