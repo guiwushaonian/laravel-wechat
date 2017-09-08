@@ -32,7 +32,7 @@ class WechatController extends Controller
                   break;
               case 'image':
                   return new Image(['media_id' => '4mSfw9-EXzn-EcLAr5aEVcRXZJC5mpljNKJzw0zk_iI']);
-                  return '收到图片消息';
+                  //return '收到图片消息';
                   break;
               case 'voice':
                   return '收到语音消息';

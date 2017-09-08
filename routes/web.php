@@ -29,6 +29,9 @@ Route::group(['middleware'=>['web']],function() {
     Route::get('/image','MaterialsController@uploadImage');
     Route::get('/lists','MaterialsController@lists');
     Route::get('/get_material','MaterialsController@getMaterial');
+
+    //获取菜单
+    Route::get('/menus','MenusController@getMenus');
 });
 
 Route::any('/wechat', 'WechatController@serve');
