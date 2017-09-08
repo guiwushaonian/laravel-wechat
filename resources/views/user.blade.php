@@ -79,11 +79,11 @@
 
     <div class="content">
         <div class="title m-b-md">
-            {{ $user->getNickname(); }}
+            {{ $user->getNickname() }}
         </div>
         <div>
 
-            <img src="{{ $user->getAvatar(); }}" alt="头像">
+            <img src="{{ $user->getAvatar() }}" alt="头像">
         </div>
 
     </div>
