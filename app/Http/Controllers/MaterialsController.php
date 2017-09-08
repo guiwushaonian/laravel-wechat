@@ -36,4 +36,12 @@ class MaterialsController extends Controller
 
         return $lists;
     }
+
+    //获取素材内容
+    public function getMaterial()
+    {
+        $image = $this->material->get('4mSfw9-EXzn-EcLAr5aEVcRXZJC5mpljNKJzw0zk_iI');
+        file_put_contents('./abc.jpg', $image);
+        return 'done';
+    }
 }
