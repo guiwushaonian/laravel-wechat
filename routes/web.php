@@ -43,4 +43,12 @@ Route::group(['middleware'=>['web']],function() {
     Route::get('/qrcode','QrcodesController@tmp_ticket');
 });
 
+Route::group(['middleware' => ['web', 'wechat.oauth']], function () {
+    Route::get('/user', function () {
+        $user = session('wechat.oauth_user'); // 拿到授权用户资料
+        return view('user',compact('user'));
+        //dd($user);
+    });
+});
+
 Route::any('/wechat', 'WechatController@serve');

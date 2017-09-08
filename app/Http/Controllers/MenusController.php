@@ -38,8 +38,8 @@ class MenusController extends Controller
                 "sub_button" => [
                     [
                         "type" => "VIEW",
-                        "name" => "搜索",
-                        "url"  => "http://www.soso.com/"
+                        "name" => "登录",
+                        "url"  => "https://wechat.52xpp.com/user"
                     ],
                     [
                         "type" => "VIEW",

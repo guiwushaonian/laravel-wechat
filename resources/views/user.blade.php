@@ -1,0 +1,3 @@
+{{ $user->getNickname(); }}
+
+{{ $user->getAvatar();  }}
