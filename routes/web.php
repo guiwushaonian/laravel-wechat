@@ -24,6 +24,10 @@ Route::group(['middleware'=>['web']],function() {
     Route::get('/send_two','MessagesController@sendTwo');
 
     Route::get('/notice','NoticesController@notice');
+
+    //素材管理
+    Route::get('/image','MaterialsController@uploadImage');
+    Route::get('/lists','MaterialsController@lists');
 });
 
 Route::any('/wechat', 'WechatController@serve');
