@@ -24,7 +24,7 @@ class MaterialsController extends Controller
     //永久素材 上传图片
     public function uploadImage()
     {
-        $result = $this->material->uploadImage("/个人头像.jpg");
+        $result = $this->material->uploadImage("./个人头像.jpg");
 
         return $result;
     }
