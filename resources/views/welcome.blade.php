@@ -81,6 +81,9 @@
                 <div class="title m-b-md">
                     Laravel-wechat
                 </div>
+                <div>
+                    <img src="{{ $content }}" alt="二维码图片">
+                </div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>

@@ -23,6 +23,8 @@ class QrcodesController extends Controller
 
         $url = $this->qrcode->url($ticket);
         $content = file_get_contents($url);
-        return $content;
+
+
+        return view('welcome',compact('content'));
     }
 }
