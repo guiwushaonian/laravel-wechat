@@ -82,7 +82,7 @@
                     Laravel-wechat
                 </div>
                 <div>
-                    <img src="{{ $content }}" alt="二维码图片">
+                    <img src="{{ $url }}" alt="二维码图片">
                 </div>
 
                 <div class="links">
