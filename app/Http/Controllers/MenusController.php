@@ -29,7 +29,7 @@ class MenusController extends Controller
     {
         $buttons = [
             [
-                "type" => "click",
+                "type" => "CLICK",
                 "name" => "今日图片",
                 "key"  => "TODAY_IMAGE"
             ],
@@ -37,17 +37,17 @@ class MenusController extends Controller
                 "name"       => "二级菜单",
                 "sub_button" => [
                     [
-                        "type" => "view",
+                        "type" => "VIEW",
                         "name" => "搜索",
                         "url"  => "http://www.soso.com/"
                     ],
                     [
-                        "type" => "view",
+                        "type" => "VIEW",
                         "name" => "视频",
                         "url"  => "http://v.qq.com/"
                     ],
                     [
-                        "type" => "click",
+                        "type" => "CLICK",
                         "name" => "赞一下我们",
                         "key" => "VOTE_GOOD"
                     ],

@@ -25,7 +25,7 @@ class WechatController extends Controller
           //return "欢迎关注 overtrue！";
           switch ($message->MsgType) {
               case 'event':
-                  if($message->Event == 'click'){
+                  if($message->Event == 'CLICK'){
                         if($message->EventKey == 'TODAY_IMAGE'){
                             return new Image(['media_id' => '4mSfw9-EXzn-EcLAr5aEVcRXZJC5mpljNKJzw0zk_iI']);
                         } elseif($message->EventKey == 'VOTE_GOOD') {
