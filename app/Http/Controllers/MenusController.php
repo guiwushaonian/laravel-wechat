@@ -29,7 +29,7 @@ class MenusController extends Controller
     {
         $buttons = [
             [
-                "type" => "CLICK",
+                "type" => "click",
                 "name" => "今日图片",
                 "key"  => "TODAY_IMAGE"
             ],
@@ -37,17 +37,17 @@ class MenusController extends Controller
                 "name"       => "二级菜单",
                 "sub_button" => [
                     [
-                        "type" => "VIEW",
+                        "type" => "view",
                         "name" => "登录",
                         "url"  => "https://wechat.52xpp.com/user"
                     ],
                     [
-                        "type" => "VIEW",
+                        "type" => "view",
                         "name" => "视频",
                         "url"  => "http://v.qq.com/"
                     ],
                     [
-                        "type" => "CLICK",
+                        "type" => "click",
                         "name" => "赞一下我们",
                         "key" => "VOTE_GOOD"
                     ],
