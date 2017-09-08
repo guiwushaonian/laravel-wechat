@@ -33,6 +33,9 @@ Route::group(['middleware'=>['web']],function() {
     //获取菜单
     Route::get('/menus','MenusController@getMenus');
     Route::get('/create_menu','MenusController@create');
+
+    //创建临时二维码
+    Route::get('/qrcode','QrcodesController@tmp_ticket');
 });
 
 Route::any('/wechat', 'WechatController@serve');
