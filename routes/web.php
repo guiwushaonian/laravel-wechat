@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $wechat = app('wechat');
+    $url = $wechat->url;
+    $shortUrl = $url->shorten('http://overtrue.me/open-source');
+    $url = 'https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQEO8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyNVR2Wk13aWRkQzExQi0yT3hwMVQAAgRuNLJZAwQQDgAA';
+    return view('welcome',compact('shortUrl','url'));
 });
 
 Route::group(['middleware'=>['web']],function() {

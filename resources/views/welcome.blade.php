@@ -82,6 +82,9 @@
                     Laravel-wechat
                 </div>
                 <div>
+                    {{ $shortUrl }}
+                </div>
+                <div>
                     <img src="{{ $url }}" alt="二维码图片">
                 </div>
 
