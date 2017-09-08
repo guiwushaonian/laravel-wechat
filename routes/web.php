@@ -32,6 +32,7 @@ Route::group(['middleware'=>['web']],function() {
 
     //获取菜单
     Route::get('/menus','MenusController@getMenus');
+    Route::get('/create_menu','MenusController@create');
 });
 
 Route::any('/wechat', 'WechatController@serve');
